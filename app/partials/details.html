@@ -1,0 +1,23 @@
+<div class="col-md-6 col-md-offset-3 no-padding lib-item" data-category="view">
+    <div class="lib-panel">
+        <div class="row box-shadow">
+            <div class="col-md-6">
+                <img class="lib-img-show" src="{{vm.details.Poster}}">
+            </div>
+            <div class="col-md-6">
+                <div class="lib-row lib-header">
+                    {{vm.details.Title}}
+                    <div class="lib-header-seperator"></div>
+                </div>
+                <div class="lib-row lib-desc">
+                    <p>{{vm.details.Plot}}</p>
+                    <p>{{vm.details.Actors}}</p>
+                    <p>{{'Released ' + vm.details.Released}}</p>
+                    <p>{{'Rated ' + vm.details.Rated}}</p>
+                    <br/>
+                    <a class="closeTag" ui-sref="main">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div ui-view>
